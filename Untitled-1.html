@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Side bar</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="/sidebar/style sheet.css" rel="stylesheet">
+    <link href="/Untitled-1.css" rel="stylesheet">
+    <script>
+        function showContent(contentId) {
+          var contentElements = document.getElementsByClassName('content');
+          for (var i = 0; i < contentElements.length; i++) {
+            contentElements[i].style.display = 'none';
+          }
+    
+          var selectedContent = document.getElementById(contentId);
+          selectedContent.style.display = 'block';
+        }
+      </script>
+</head>
+<body>
+    <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
+        <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Company name</a>
+        <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
+        <ul class="navbar-nav px-3">
+          <li class="nav-item text-nowrap">
+            <a class="nav-link" href="#">Sign out</a>
+          </li>
+        </ul>
+      </nav>
+    <div class="container-fluid">
+        <div class="row">
+          <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+            <div class="sidebar-sticky">
+                <ul>
+                    <li><a href="#" onclick="showContent('home')">Home</a></li><br>
+                    <li><a href="#" onclick="showContent('contact')">Contact</a></li><br>
+                    <li><a href="#" onclick="showContent('information')">Information</a></li><br>
+                    <li><a href="#" onclick="showContent('guide')">Guide</a></li><br>
+                  </ul>
+            </div>
+          </nav> 
+          <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4"><div id="content">
+            <div id="home" class="content">
+              <h2>Get Updates for Jobs and Internships openings from different companies</h2><br>
+              <h2>We are Here for you ! ! !</h2><br>
+              <div class="container">
+                <h2 id="id4">Recent Openings</h2>
+              </div>
+              <div class="container mt-5">
+                <div id="companydetail" class="row">
+               <div class="col-md-4 pt-2">
+                    <div class="card p-3 mb-2">
+                        <div class="d-flex justify-content-between">
+                            <div class="d-flex flex-row align-items-center">
+                                <div class="ms-2 c-details">
+                                    <h2 class="mb-0"> The Bulk Cart Hiring Social Media Intern</h2>
+                                </div>
+                            </div>
+                        </div>
+                         <div class="mt-1">
+                            <h5 class="heading"><i class="fa fa-graduation-cap pr-2"></i>Any Batch</h5>
+                        </div>
+                         <div class="mt-1">
+                            <h5 class="heading"><i class="fa fa-money pr-2"></i>15k</h5>
+                        </div>
+                         <div class="mt-1">
+                            <h5 class="heading"><i class="fa fa-map-marker pr-2"></i>Remote</h5>
+                        </div>
+                        <div class="mt-1">
+                            <h5 class="heading">Date: 24-6-2023</h5>
+                        </div>
+                        <div class="mt-1">
+                            <a href="https://jobfreak.in/jobsandinternships/TheBulkCart-hiring-off-campus-drive-for-freshers.html"><button class="btn btn-info">View More</button></a>
+                        </div>
+                    </div>
+                </div>
+               <div class="col-md-4 pt-2">
+                    <div class="card p-3 mb-2">
+                        <div class="d-flex justify-content-between">
+                            <div class="d-flex flex-row align-items-center">
+                                <div class="ms-2 c-details">
+                                    <h2 class="mb-0"> Blackrock Hiring Software Engineer</h2>
+                                </div>
+                            </div>
+                        </div>
+                         <div class="mt-1">
+                            <h5 class="heading"><i class="fa fa-graduation-cap pr-2"></i>Any Batch</h5>
+                        </div>
+                         <div class="mt-1">
+                            <h5 class="heading"><i class="fa fa-money pr-2"></i>16 LPA</h5>
+                        </div>
+                         <div class="mt-1">
+                            <h5 class="heading"><i class="fa fa-map-marker pr-2"></i>Gurugram</h5>
+                        </div>
+                        <div class="mt-1">
+                            <h5 class="heading">Date: 23-6-2023</h5>
+                        </div>
+                        <div class="mt-1">
+                            <a href="https://jobfreak.in/jobsandinternships/Blackrock-hiring-off-campus-drive-for-freshers.html"><button class="btn btn-info">View More</button></a>
+                        </div>
+                    </div>
+                </div>
+               <div class="col-md-4 pt-2">
+                    <div class="card p-3 mb-2">
+                        <div class="d-flex justify-content-between">
+                            <div class="d-flex flex-row align-items-center">
+                                <div class="ms-2 c-details">
+                                    <h2 class="mb-0"> Alter Domus Hiring Software Engineer</h2>
+                                </div>
+                            </div>
+                        </div>
+                         <div class="mt-1">
+                            <h5 class="heading"><i class="fa fa-graduation-cap pr-2"></i>2022, 23</h5>
+                        </div>
+                         <div class="mt-1">
+                            <h5 class="heading"><i class="fa fa-money pr-2"></i>8 LPA</h5>
+                        </div>
+                         <div class="mt-1">
+                            <h5 class="heading"><i class="fa fa-map-marker pr-2"></i>Hyderabad</h5>
+                        </div>
+                        <div class="mt-1">
+                            <h5 class="heading">Date: 22-6-2023</h5>
+                        </div>
+                        <div class="mt-1">
+                            <a href="https://jobfreak.in/jobsandinternships/Alter-hiring-off-campus-drive-for-freshers.html"><button class="btn btn-info">View More</button></a>
+                        </div>
+                    </div>
+                </div>
+               <div class="col-md-4 pt-2">
+                    <div class="card p-3 mb-2">
+                        <div class="d-flex justify-content-between">
+                            <div class="d-flex flex-row align-items-center">
+                                <div class="ms-2 c-details">
+                                    <h2 class="mb-0"> Secure Blink Hiring Frontend Developer Intern</h2>
+                                </div>
+                            </div>
+                        </div>
+                         <div class="mt-1">
+                            <h5 class="heading"><i class="fa fa-graduation-cap pr-2"></i>Any Batch</h5>
+                        </div>
+                         <div class="mt-1">
+                            <h5 class="heading"><i class="fa fa-money pr-2"></i>14k</h5>
+                        </div>
+                         <div class="mt-1">
+                            <h5 class="heading"><i class="fa fa-map-marker pr-2"></i>Noida</h5>
+                        </div>
+                        <div class="mt-1">
+                            <h5 class="heading">Date: 20-6-2023</h5>
+                        </div>
+                        <div class="mt-1">
+                            <a href="https://jobfreak.in/jobsandinternships/SecureBlink-hiring-off-campus-drive-for-freshers.html"><button class="btn btn-info">View More</button></a>
+                        </div>
+                    </div>
+                </div>
+               <div class="col-md-4 pt-2">
+                    <div class="card p-3 mb-2">
+                        <div class="d-flex justify-content-between">
+                            <div class="d-flex flex-row align-items-center">
+                                <div class="ms-2 c-details">
+                                    <h2 class="mb-0"> FIS Global Hiring Software Engineer</h2>
+                                </div>
+                            </div>
+                        </div>
+                         <div class="mt-1">
+                            <h5 class="heading"><i class="fa fa-graduation-cap pr-2"></i>Any Batch</h5>
+                        </div>
+                         <div class="mt-1">
+                            <h5 class="heading"><i class="fa fa-money pr-2"></i>12 LPA</h5>
+                        </div>
+                         <div class="mt-1">
+                            <h5 class="heading"><i class="fa fa-map-marker pr-2"></i>Pune</h5>
+                        </div>
+                        <div class="mt-1">
+                            <h5 class="heading">Date: 20-6-2023</h5>
+                        </div>
+                        <div class="mt-1">
+                            <a href="https://jobfreak.in/jobsandinternships/FisGlobal-hiring-off-campus-drive-for-freshers.html"><button class="btn btn-info">View More</button></a>
+                        </div>
+                    </div>
+                </div></div>
+                 <a href="./Alljobs.html"><button class="btn btn-success">Get More</button></a>
+              </div>
+              <p>
+                All Company names and brands are the Intellectual Property of their
+                respective owners. All company , product , and service names used in
+                this website are for identification purposes only. We are not
+                associated with any company/organization whose jobs posted on
+                jobfreak.in , We are just an information provider for jobs and
+                internships
+              </p>
+            </div>
+            <div id="contact" class="content" style="display: none;">
+                <div class="container">
+                    <form>
+                      <div class="form-group">
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Name">
+                      </div>
+                      <div class="form-group">
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Email">
+                      </div>
+                       <div class="form-group">
+                  <textarea class="form-control" placeholder="Message" id="exampleFormControlTextarea1" rows="6"></textarea>
+                </div>
+                      <button type="submit" class="btn btn-primary">Send Message</button>
+                       </form></div>
+            </div>
+            <div id="information" class="content" style="display: none;">
+                    <h1>About Us</h1>
+                    <p>
+                      At Job Freak We Post daily updates on internships and jobs postings !
+                      !
+                      <br>Our aim is to empower the youth of our country and make them
+                      Self-dependent. By providing them job/internships all kinds of
+                      opportunities from various sectors, sharing knowledge and make them
+                      competent enough so that they could excel in any field. If you have
+                      any query regrading Site, Advertisement and any other issue, please
+                      feel free to<br>
+                      contact at our email <span>shyam_25@jobfreak.in</span>
+                    </p>
+            </div>
+            <div id="guide" class="content" style="display: none;">
+                <div id="footer">
+                    <p>Copyright@2023 All rights reserved</p>
+                    <a href="https://jobfreak.in/terms.html">Terms &amp; Conditions</a>
+                    <a href="https://jobfreak.in/privacy.html">| Privacy Policy</a>
+                    <a href="https://jobfreak.in/dmc.html">| DMCA</a>
+                  </div>
+            </div>
+          </div>
+        </main>
+          
+        </div>
+        
+    </div> 
+
+</body>
+</html>
